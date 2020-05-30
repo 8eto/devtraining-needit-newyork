@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" type="collection"/>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" sizeclass="3" type="collection">
+        <element attributes="encode_utf8=false" dependent="manager" dependent_on_field="manager" label="Manager" max_length="32" name="manager" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="manager" max_length="80" name="u_field_name_1" type="field_name" use_dependent_field="true"/>
+    </element>
 </database>
